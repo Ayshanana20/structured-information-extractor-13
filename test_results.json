@@ -1,0 +1,426 @@
+[
+  {
+    "id": "TC01",
+    "category": "normal",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": true,
+    "actual_complete": true,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Halima Bello",
+      "email": "halima@example.com",
+      "track": "data_analytics",
+      "skills": [
+        "python",
+        "react",
+        "sql"
+      ],
+      "availability": "full_time",
+      "years_of_experience": 2.0,
+      "is_complete": true,
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "TC02",
+    "category": "normal",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": true,
+    "actual_complete": true,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Tunde Adeyemi",
+      "email": "tunde.adeyemi@example.com",
+      "track": "ai_ml",
+      "skills": [
+        "sql",
+        "excel",
+        "pandas"
+      ],
+      "availability": "part_time",
+      "years_of_experience": 0.0,
+      "is_complete": true,
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "TC03",
+    "category": "normal",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": true,
+    "actual_complete": true,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Chioma Okafor",
+      "email": "chioma.o@example.com",
+      "track": "product_design",
+      "skills": [
+        "figma"
+      ],
+      "availability": "weekends_only",
+      "years_of_experience": 1.0,
+      "is_complete": true,
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "TC04",
+    "category": "normal",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": true,
+    "actual_complete": true,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Ibrahim Musa",
+      "email": "ibrahim.m@example.com",
+      "track": "ai_ml",
+      "skills": [
+        "python",
+        "fastapi"
+      ],
+      "availability": "full_time",
+      "years_of_experience": 3.0,
+      "is_complete": true,
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "TC05",
+    "category": "incomplete",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Fatima Ali",
+      "email": null,
+      "track": "software_engineering",
+      "skills": [
+        "python",
+        "fastapi"
+      ],
+      "availability": "unspecified",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "email"
+      ]
+    }
+  },
+  {
+    "id": "TC06",
+    "category": "incomplete",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Applying",
+      "email": null,
+      "track": "ai_ml",
+      "skills": [],
+      "availability": "full_time",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "email"
+      ]
+    }
+  },
+  {
+    "id": "TC07",
+    "category": "incomplete",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Reach",
+      "email": "sole.applicant@example.com",
+      "track": "unknown",
+      "skills": [
+        "python"
+      ],
+      "availability": "unspecified",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "track"
+      ]
+    }
+  },
+  {
+    "id": "TC08",
+    "category": "incomplete",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": null,
+      "email": null,
+      "track": "software_engineering",
+      "skills": [
+        "typescript",
+        "react"
+      ],
+      "availability": "unspecified",
+      "years_of_experience": 2.0,
+      "is_complete": false,
+      "missing_fields": [
+        "applicant_name",
+        "email"
+      ]
+    }
+  },
+  {
+    "id": "TC09",
+    "category": "ambiguous",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Musa Garba",
+      "email": "musa.g@example.com",
+      "track": "unknown",
+      "skills": [],
+      "availability": "unspecified",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "track"
+      ]
+    }
+  },
+  {
+    "id": "TC10",
+    "category": "ambiguous",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Looking",
+      "email": null,
+      "track": "unknown",
+      "skills": [],
+      "availability": "unspecified",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "email",
+        "track"
+      ]
+    }
+  },
+  {
+    "id": "TC11",
+    "category": "ambiguous",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Adaeze Eze",
+      "email": "adaeze@example.com",
+      "track": "unknown",
+      "skills": [],
+      "availability": "unspecified",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "track"
+      ]
+    }
+  },
+  {
+    "id": "TC12",
+    "category": "ambiguous",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Can",
+      "email": null,
+      "track": "unknown",
+      "skills": [],
+      "availability": "weekends_only",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "email",
+        "track"
+      ]
+    }
+  },
+  {
+    "id": "TC13",
+    "category": "malformed",
+    "expect_valid": false,
+    "actual_valid": false,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Invalid input: expected a non-empty text string.",
+    "payload": {}
+  },
+  {
+    "id": "TC14",
+    "category": "malformed",
+    "expect_valid": false,
+    "actual_valid": false,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Invalid input: expected a non-empty text string.",
+    "payload": {}
+  },
+  {
+    "id": "TC15",
+    "category": "malformed",
+    "expect_valid": false,
+    "actual_valid": false,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Invalid input: expected a non-empty text string.",
+    "payload": {}
+  },
+  {
+    "id": "TC16",
+    "category": "malformed",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": null,
+      "email": null,
+      "track": "unknown",
+      "skills": [],
+      "availability": "unspecified",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "applicant_name",
+        "email",
+        "track"
+      ]
+    }
+  },
+  {
+    "id": "TC17",
+    "category": "adversarial",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": true,
+    "actual_complete": true,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Kemi Adebayo",
+      "email": "kemi@example.com",
+      "track": "software_engineering",
+      "skills": [
+        "python"
+      ],
+      "availability": "full_time",
+      "years_of_experience": 0.0,
+      "is_complete": true,
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "TC18",
+    "category": "adversarial",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": true,
+    "actual_complete": true,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Yusuf Lawal",
+      "email": "yusuf@example.com",
+      "track": "data_analytics",
+      "skills": [
+        "sql"
+      ],
+      "availability": "part_time",
+      "years_of_experience": 0.0,
+      "is_complete": true,
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "TC19",
+    "category": "adversarial",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": false,
+    "actual_complete": false,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Forget",
+      "email": null,
+      "track": "unknown",
+      "skills": [],
+      "availability": "unspecified",
+      "years_of_experience": 0.0,
+      "is_complete": false,
+      "missing_fields": [
+        "email",
+        "track"
+      ]
+    }
+  },
+  {
+    "id": "TC20",
+    "category": "adversarial",
+    "expect_valid": true,
+    "actual_valid": true,
+    "expect_complete": true,
+    "actual_complete": true,
+    "passed": true,
+    "message": "Valid structured output.",
+    "payload": {
+      "applicant_name": "Sadiq Umar",
+      "email": "test@example.com",
+      "track": "ai_ml",
+      "skills": [],
+      "availability": "full_time",
+      "years_of_experience": 0.0,
+      "is_complete": true,
+      "missing_fields": []
+    }
+  }
+]
